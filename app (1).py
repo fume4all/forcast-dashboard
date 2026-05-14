@@ -19,7 +19,7 @@ forecast_unit = st.sidebar.selectbox(
 forecast_value = st.sidebar.number_input(
     f"Number of {forecast_unit.lower()} to forecast:",
     min_value=1,
-    max_value=10 if forecast_unit == "Years" else 120,
+    max_value=20 if forecast_unit == "Years" else 120,
     value=12 if forecast_unit == "Months" else 1
 )
 
